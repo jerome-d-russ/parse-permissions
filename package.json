@@ -1,0 +1,16 @@
+{
+  "name": "parse-permissions",
+  "version": "1.0.0",
+  "description": "A CLI tool to parse permissions from Profiles and Permission Sets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "sequence": "^3.0.0",
+    "xml2js": "^0.4.16"
+  }
+}
