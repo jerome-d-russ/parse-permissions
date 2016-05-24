@@ -164,21 +164,21 @@ function compareApplicationVisibilities(f, p1, p2){
         if(p1[p1Ctr].default){
           fs.appendFileSync(f,"Application Visibilities," + p1[p1Ctr].application[0] + ',Default, ' + p1[p1Ctr].default[0] + ',' + '\n');;
         }
-        fs.appendFileSync(f,"Application Visibilities," + p1[p1Ctr].application[0] + ',Default, ' + p1[p1Ctr].visible[0] + ',' + '\n');;
+        fs.appendFileSync(f,"Application Visibilities," + p1[p1Ctr].application[0] + ',Visible, ' + p1[p1Ctr].visible[0] + ',' + '\n');;
         p1Ctr++;
         break;
       case p1[p1Ctr].application[0] > p2[p2Ctr].application[0]:
         if(p2[p2Ctr].default){
           fs.appendFileSync(f,"Application Visibilities," + p2[p2Ctr].application[0] + ',Default,,' + p2[p2Ctr].default[0] + '\n');;
         }
-        fs.appendFileSync(f,"Application Visibilities," + p2[p2Ctr].application[0] + ',Default,,' + p2[p2Ctr].visible[0] + '\n');;
+        fs.appendFileSync(f,"Application Visibilities," + p2[p2Ctr].application[0] + ',Visible,,' + p2[p2Ctr].visible[0] + '\n');;
         p2Ctr++;
         break;
       case program.report:
         if(p1[p1Ctr].default){
           fs.appendFileSync(f,"Application Visibilities," + p1[p1Ctr].application[0] + ',Default, ' + p1[p1Ctr].default[0] + '\n');;
         }
-        fs.appendFileSync(f,"Application Visibilities," + p1[p1Ctr].application[0] + ',Default, ' + p1[p1Ctr].visible[0] + '\n');;
+        fs.appendFileSync(f,"Application Visibilities," + p1[p1Ctr].application[0] + ',Visible, ' + p1[p1Ctr].visible[0] + '\n');;
         p1Ctr++;
         p2Ctr++;
         break;
