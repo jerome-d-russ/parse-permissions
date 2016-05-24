@@ -180,6 +180,7 @@ function compareApplicationVisibilities(f, p1, p2){
         }
         fs.appendFileSync(f,"Application Visibilities," + p1[p1Ctr].application[0] + ',Default, ' + p1[p1Ctr].visible[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(p1[p1Ctr].default && p2[p2Ctr].default && (program.same || p1[p1Ctr].default[0] !== p2[p2Ctr].default[0])){
@@ -218,6 +219,7 @@ function compareClassAccesses(f, p1, p2){
       case program.report:
         fs.appendFileSync(f,"Class Accesses," + p1[p1Ctr].apexClass[0] + ',Enabled,' + p1[p1Ctr].enabled[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(program.same || p1[p1Ctr].enabled[0] !== p2[p2Ctr].enabled[0]){
@@ -271,6 +273,7 @@ function compareFieldPermissions(f, p1, p2){
         fs.appendFileSync(f,"Field Permissions," + p1[p1Ctr].field[0] + ',Readable,' + p1[p1Ctr].readable[0] + '\n');;
         fs.appendFileSync(f,"Field Permissions," + p1[p1Ctr].field[0] + ',Editable,' + p1[p1Ctr].editable[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(program.same || p1[p1Ctr].readable[0] !== p2[p2Ctr].readable[0]){
@@ -340,6 +343,7 @@ function compareObjectPermissions(f, p1, p2){
         fs.appendFileSync(f,"Object Permissions," + p1[p1Ctr].object[0] + ',ModifyAllRecords,' + p1[p1Ctr].modifyAllRecords[0] + '\n');;
         fs.appendFileSync(f,"Object Permissions," + p1[p1Ctr].object[0] + ',ViewAllRecords,' + p1[p1Ctr].viewAllRecords[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(program.same || p1[p1Ctr].allowCreate[0] !== p2[p2Ctr].allowCreate[0]){
@@ -390,6 +394,7 @@ function comparePageAccesses(f, p1, p2){
       case program.report:
         fs.appendFileSync(f,"Page Accesses," + p1[p1Ctr].apexPage[0] + ',Enabled,' + p1[p1Ctr].enabled[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(program.same || p1[p1Ctr].enabled[0] !== p2[p2Ctr].enabled[0]){
@@ -429,6 +434,7 @@ function compareRecordTypeVisibilities(f, p1, p2){
         fs.appendFileSync(f,"Record Type Visibilities," + p1[p1Ctr].recordType[0] + ',Default,' + p1[p1Ctr].default[0] + '\n');;
         fs.appendFileSync(f,"Record Type Visibilities," + p1[p1Ctr].recordType[0] + ',Visibile,' + p1[p1Ctr].visible[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(program.same || p1[p1Ctr].default[0] !== p2[p2Ctr].default[0]){
@@ -467,6 +473,7 @@ function compareTabVisibilties(f, p1, p2){
       case program.report:
         fs.appendFileSync(f,"Tab Visibilities," + p1[p1Ctr].tab[0] + ',Visibility,' + p1[p1Ctr].visibility[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(program.same || p1[p1Ctr].visibility[0] !== p2[p2Ctr].visibility[0]){
@@ -511,6 +518,7 @@ function compareUserPermissions(f, p1, p2){
       case program.report:
         fs.appendFileSync(f,"User Permissions," + p1[p1Ctr].name[0] + ',Enabled,' + p1[p1Ctr].enabled[0] + '\n');;
         p1Ctr++;
+        p2Ctr++;
         break;
       default:
         if(program.same || p1[p1Ctr].enabled[0] !== p2[p2Ctr].enabled[0]){
